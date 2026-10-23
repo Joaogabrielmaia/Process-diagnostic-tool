@@ -20,7 +20,8 @@
     "db:reset": "prisma db push --force-reset && tsx prisma/seed.ts",
     "screenshots": "playwright test tests/e2e/screenshots.spec.ts",
     "report:pdf": "tsx scripts/generate-sample-pdf.ts",
-    "sensitivity": "tsx scripts/sensitivity.ts"
+    "sensitivity": "tsx scripts/sensitivity.ts",
+    "demo:clean": "tsx scripts/clean-demo.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"
@@ -42,6 +43,7 @@
     "@types/node": "^26.6.5",
     "@types/react": "^19.3.0",
     "@types/react-dom": "^19.3.0",
+    "@vitest/coverage-v8": "^3.2.7",
     "autoprefixer": "^10.6.1",
     "dotenv": "^18.0.9",
     "eslint": "^9.39.5",
