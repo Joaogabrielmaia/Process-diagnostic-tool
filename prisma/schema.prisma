@@ -1,0 +1,111 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  CONSULTOR
+}
+
+enum Area {
+  COMERCIAL
+  ATENDIMENTO
+  FINANCEIRO
+  OPERACAO
+  RH
+}
+
+enum Frequency {
+  DIARIA
+  SEMANAL
+  QUINZENAL
+  MENSAL
+  EVENTUAL
+}
+
+enum Sensitivity {
+  NENHUM
+  PESSOAL
+  SAUDE_FINANCEIRO
+}
+
+enum ProcessSource {
+  CONSULTOR
+  CLIENTE
+}
+
+model User {
+  id           String      @id @default(cuid())
+  email        String      @unique
+  name         String
+  passwordHash String
+  role         Role        @default(CONSULTOR)
+  createdAt    DateTime    @default(now())
+  diagnoses    Diagnosis[]
+}
+
+model Diagnosis {
+  id          String             @id @default(cuid())
+  clientName  String
+  sector      String
+  headcount   Int
+  consultant  User               @relation(fields: [consultantId], references: [id])
+  consultantId String
+  createdAt   DateTime           @default(now())
+  versions    DiagnosisVersion[]
+  invites     ClientInvite[]
+}
+
+/// Cada versão é um retrato completo: premissas, critérios e processos (ADR-004).
+model DiagnosisVersion {
+  id          String    @id @default(cuid())
+  diagnosis   Diagnosis @relation(fields: [diagnosisId], references: [id], onDelete: Cascade)
+  diagnosisId String
+  number      Int
+  label       String
+  premises    Json
+  config      Json
+  createdAt   DateTime  @default(now())
+  processes   Process[]
+
+  @@unique([diagnosisId, number])
+}
+
+model Process {
+  id                  String           @id @default(cuid())
+  version             DiagnosisVersion @relation(fields: [versionId], references: [id], onDelete: Cascade)
+  versionId           String
+  /// Identificador estável entre versões, usado na comparação (RF-12).
+  key                 String
+  name                String
+  area                Area
+  frequency           Frequency
+  volumePerExecution  Int?
+  minutesPerExecution Float?
+  people              Int?
+  tools               String[]
+  standardization     Int?
+  errorRatePct        Float?
+  dataDigitization    Int?
+  dependencies        Int?
+  sensitiveData       Sensitivity?
+  source              ProcessSource    @default(CONSULTOR)
+  needsReview         Boolean          @default(false)
+  notes               String?
+
+  @@index([versionId])
+}
+
+model ClientInvite {
+  id          String    @id @default(cuid())
+  diagnosis   Diagnosis @relation(fields: [diagnosisId], references: [id], onDelete: Cascade)
+  diagnosisId String
+  token       String    @unique
+  expiresAt   DateTime
+  createdAt   DateTime  @default(now())
+  submittedAt DateTime?
+}
