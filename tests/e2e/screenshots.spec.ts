@@ -56,6 +56,10 @@ test.describe("prints da documentação", () => {
     await page.waitForURL("**/cliente*");
     await shot(page, "11-link-do-cliente-consultor.png");
 
+    await page.getByRole("link", { name: "Proposta" }).click();
+    await page.waitForURL("**/proposta*");
+    await shot(page, "12-proposta-v1-1.png");
+
   });
 
   test("formulário do cliente (sem login)", async ({ page }) => {

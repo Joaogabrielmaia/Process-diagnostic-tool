@@ -21,6 +21,7 @@ const TABS = [
   ["matriz", "Matriz"],
   ["premissas", "Premissas e retorno"],
   ["relatorio", "Relatório"],
+  ["proposta", "Proposta"],
   ["versoes", "Versões"],
   ["cliente", "Formulário do cliente"],
 ] as const;
