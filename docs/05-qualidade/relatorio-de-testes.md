@@ -14,7 +14,18 @@ Tudo abaixo foi **executado** no meu computador (Windows 11, Node 24, PostgreSQL
 | Prints | `npm run screenshots` | 3 testes passaram; 13 imagens geradas |
 | PDF | `npm run report:pdf` | 2 PDFs gerados (≈ 120 KB cada; 6 páginas o da v2) |
 
-## Cobertura (medida)
+## Atualização da v1.1.0 (execução real)
+
+| Camada | Resultado |
+|---|---|
+| Tipos e lint | sem erros e sem avisos |
+| Vitest completo (`npx vitest run`) | **96 testes, 5 arquivos, todos passaram**: 85 unitários (inclui 7 da proposta) e 11 de integração |
+| E2E (`flow.spec.ts` + `proposta.spec.ts`) | **12 testes, todos passaram** (≈ 1,8 min) |
+| Prints | 14 arquivos em `docs/screenshots/` (incl. 12-proposta-v1-1) |
+
+Falha encontrada na v1.1: ao rodar unitários e integração juntos, o `beforeAll` da integração (que executa `prisma db push`) estourou o limite padrão de 10 s de hook. Não era erro de lógica: aumentei `hookTimeout` para 90 s no projeto de integração e as duas execuções (junto e isolada) passaram. A tabela de resumo e as contagens acima da v1.0.0 abaixo refletem a v1.0.0; a v1.1.0 só acrescenta o que está nesta seção.
+
+## Cobertura (medida, v1.0.0)
 
 `npx vitest run --project unit --coverage`, restrita a `src/lib/scoring/**`:
 
