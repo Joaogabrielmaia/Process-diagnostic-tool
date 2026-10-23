@@ -20,7 +20,7 @@ Construído por [João Gabriel Maia da Costa](#o-que-este-projeto-demonstra-sobr
 
 ## Como o discovery foi feito
 
-Eu não tinha um cliente real, então **simulei**: o Claude interpretou o sócio-consultor, a analista de projetos e o dono da clínica em reuniões que registrei em [`docs/01-discovery`](docs/01-discovery/). Todo registro simulado começa com a linha *"Simulação: o Claude interpretou o cliente nesta conversa."* Nelas apareceram contradições que mudaram o produto (o sócio queria rapidez, a analista profundidade), pedidos vagos que refinei e uma restrição que mudou o escopo (dado de paciente não pode sair da máquina). Se eu tiver anotações de uma conversa real e autorizada, elas substituem a simulação.
+Eu não tinha um cliente real, então **simulei**: o Claude interpretou o sócio-consultor, a analista de projetos e o dono da clínica em reuniões que registrei em [`docs/01-discovery`](docs/01-discovery/). Todo registro simulado começa com a linha *"Simulação: o Claude interpretou o cliente nesta conversa."* Nelas apareceram contradições que mudaram o produto (o sócio queria rapidez, a analista profundidade), pedidos vagos que refinei e uma restrição que mudou o escopo (dado de paciente não pode sair da máquina). Se eu tiver anotações de uma conversa real e autorizada, elas substituem a simulação. A seção "Minha experiência real" deste README é um texto de exemplo a ser substituído.
 
 ## Mapa do repositório
 
@@ -234,7 +234,9 @@ O resumo por IA é opcional: sem chave, o `MockProvider` é usado. Para ligar, d
 
 ### Minha experiência real
 
-[ESPAÇO PARA EU PREENCHER: ligação com minha experiência real de discovery e atendimento a clientes]
+> **Texto de exemplo, escrito como modelo.** Substitua pelos fatos da sua trajetória antes de usar como apresentação pessoal.
+
+No atendimento direto a clientes, aprendi que o cliente raramente sabe descrever o problema em termos técnicos: ele descreve o incômodo ("a recepção passa a manhã no WhatsApp"). Meu trabalho no discovery é transformar esse incômodo em perguntas objetivas (quantas vezes, quanto tempo, quem faz, onde ficam os dados) e devolver uma resposta que ele entenda e possa questionar. Foi dessa prática que veio a decisão central do Mapa: mostrar a conta e a incerteza em vez de um número pronto, porque a confiança do cliente se constrói quando ele consegue acompanhar o raciocínio.
 
 ## Licença
 
