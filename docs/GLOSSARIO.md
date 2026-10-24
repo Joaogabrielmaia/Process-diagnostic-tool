@@ -18,3 +18,11 @@ Termos usados no projeto, com uma linha de definição e o lugar onde aparecem. 
 | Roteiro 30/60/90 | Ordem de implantação em janelas de 30 dias, limitada pela capacidade em horas. | [Metodologia](03-metodologia/README.md) |
 | Análise de sensibilidade | Teste do que muda no resultado quando uma premissa muda. | [Sensibilidade](03-metodologia/sensibilidade.md) |
 | Versão como retrato (snapshot) | Cada versão do diagnóstico guarda uma cópia completa dos dados; as anteriores não mudam. | [ADR-004](04-arquitetura/adr-004-versoes.md) |
+| Product Backlog | Lista priorizada de tudo o que o produto pode receber, com as histórias de usuário. | [Planejamento e Scrum](ciclo-de-vida/02-planejamento-e-scrum.md) |
+| Sprint | Ciclo curto de trabalho com objetivo, entregáveis e critério de conclusão. | [Sprints](ciclo-de-vida/sprints/README.md) |
+| Definition of Done (DoD) | Lista de condições que uma entrega precisa cumprir para contar como pronta. | [Planejamento e Scrum](ciclo-de-vida/02-planejamento-e-scrum.md#definition-of-done) |
+| MoSCoW | Priorização em Must, Should, Could e Won't. | [Histórias](02-definicao/historias.md) |
+| RACI | Matriz que diz quem executa, quem responde, quem é consultado e quem é informado. | [Requisitos e rastreabilidade](ciclo-de-vida/03-requisitos-e-rastreabilidade.md) |
+| Rastreabilidade | Ligação entre necessidade, requisito, regra, código e teste. | [Rastreabilidade](02-definicao/rastreabilidade.md) |
+| Modelo C4 | Forma de desenhar a arquitetura em níveis: contexto, contêineres e componentes. | [Arquitetura e ADRs](ciclo-de-vida/04-arquitetura-e-adrs.md) |
+| Modelo ER | Diagrama de entidades e relacionamentos do banco de dados. | [Modelo de dados](ciclo-de-vida/05-modelo-de-dados.md) |

@@ -36,6 +36,9 @@ Guia da série. Cada episódio tem uma página própria, com resumo, tabela de d
 
 ## Material de apoio
 
+- [Relatório do ciclo de vida](ciclo-de-vida/README.md): visão, Scrum, requisitos, arquitetura, dados, desenvolvimento, testes, implantação e evolução
+- [Sprints](ciclo-de-vida/sprints/README.md) e [reuniões](ciclo-de-vida/reunioes/README.md)
+
 - [Exemplo de relatório](exemplo-de-relatorio/README.md): os dois PDFs e a primeira página do v2
 - [Galeria de prints](screenshots/README.md): 14 telas na ordem do fluxo, com as telas sem print
 - [Glossário](GLOSSARIO.md)

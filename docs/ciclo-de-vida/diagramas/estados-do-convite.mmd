@@ -1,0 +1,6 @@
+stateDiagram-v2
+    [*] --> Gerado : consultor gera o link
+    Gerado --> Respondido : cliente envia processo
+    Gerado --> Expirado : passam 14 dias
+    Respondido --> Expirado : passam 14 dias
+    Expirado --> [*]

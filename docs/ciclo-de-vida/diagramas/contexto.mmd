@@ -1,0 +1,6 @@
+flowchart TB
+    CON["Consultor<br/>usa o Mapa na reunião"] --> MAPA["Mapa<br/>aplicação Next.js"]
+    CLI["Cliente<br/>só o formulário curto, por link"] --> MAPA
+    MAPA --> BD[("PostgreSQL")]
+    MAPA --> CHR["Chromium<br/>gera o PDF"]
+    MAPA -. "opcional, números agregados" .-> LLM["API externa do resumo<br/>não testada com chave real"]
