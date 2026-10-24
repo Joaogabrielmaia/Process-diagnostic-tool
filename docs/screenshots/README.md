@@ -1,10 +1,10 @@
 # Galeria de prints
 
-Os 14 prints foram gerados pelo app rodando com o seed da Clínica Vida Plena (`npm run screenshots`). A ordem segue o fluxo de uso. Cada legenda tem duas partes: o que se vê · por que importa.
+Os 14 prints foram gerados pelo app rodando com o seed da Clínica Vida Plena. A ordem segue o fluxo de uso. Cada legenda tem duas partes: o que se vê · por que importa.
 
 ![Sequência de capturas do fluxo: login, cadastro de um processo, ranking, matriz e relatório](demo-diagnostico.gif)
 
-*Sequência de 10 capturas do app rodando (cerca de 22 s): login, abertura do diagnóstico, cadastro de um processo, ranking, matriz, premissas e relatório. Não é uma gravação contínua. O processo "Envio de orçamentos por e-mail" foi cadastrado só para a captura e removido em seguida com `npm run demo:clean`.*
+*Sequência de 10 capturas do app rodando (cerca de 22 s): login, abertura do diagnóstico, cadastro de um processo, ranking, matriz, premissas e relatório. Não é uma gravação contínua. O processo "Envio de orçamentos por e-mail" foi cadastrado só para a captura.*
 
 | Tela | Legenda |
 |---|---|

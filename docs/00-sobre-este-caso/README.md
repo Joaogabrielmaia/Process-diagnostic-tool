@@ -42,6 +42,6 @@ Nomes brasileiros comuns, escolhidos ao acaso. Nenhuma pessoa ou marca real é r
 | Atalho, Vida Plena e pessoas | Fictícias | Nenhuma pessoa ou marca real é retratada |
 | Números do diagnóstico (horas, volumes, taxas de erro, custo da hora) | Fictícios | Criados para o estudo; a economia é estimativa com fórmula visível e faixa |
 | Código, testes, prints e PDF | Reais | Gerados rodando a ferramenta; veja o [relatório de testes](../05-qualidade/relatorio-de-testes.md), com as falhas |
-| Cliente, produção, hospedagem | Não existem | Tudo roda localmente (Docker Compose) |
+| Cliente, produção, hospedagem | Não existem | Sem deploy de aplicação |
 
 Próximo passo: [discovery](../01-discovery/01-brainstorm-e-decisao.md). Índice completo: [INDEX](../INDEX.md).
