@@ -1,0 +1,21 @@
+Data: 2026-10-24T10:24:34-03:00
+Commit: bd3169b
+Node: v24.14.0
+Comando: npm run test:integration
+-----
+
+> mapa-diagnostico@1.1.0 test:integration
+> vitest run --project integration --no-file-parallelism
+
+
+ RUN  v3.2.7 C:/Users/Joaog/Downloads/Process-diagnostic-tool
+
+ ✓  integration  tests/integration/services.test.ts (11 tests) 9935ms
+   ✓ versões (ADR-004) > a chave do processo é estável entre versões e a comparação a usa  316ms
+   ✓ sessão > senha: hash não guarda o texto e verifica corretamente  654ms
+
+ Test Files  1 passed (1)
+      Tests  11 passed (11)
+   Start at  10:24:37
+   Duration  11.34s (transform 224ms, setup 46ms, collect 592ms, tests 9.94s, environment 0ms, prepare 428ms)
+

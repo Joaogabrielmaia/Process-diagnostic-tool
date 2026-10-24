@@ -1,0 +1,29 @@
+Data: 2026-10-24T10:24:49-03:00
+Commit: bd3169b
+Node: v24.14.0
+Comando: npm run test:e2e
+-----
+
+> mapa-diagnostico@1.1.0 test:e2e
+> playwright test
+
+
+Running 15 tests using 1 worker
+
+  ✓   1 tests\e2e\flow.spec.ts:5:7 › acesso › rotas internas exigem login (7.5s)
+  ✓   2 tests\e2e\flow.spec.ts:10:7 › acesso › senha errada mostra erro genérico (3.8s)
+  ✓   3 tests\e2e\flow.spec.ts:18:7 › acesso › link do cliente com token inválido não revela nada (5.9s)
+  ✓   4 tests\e2e\flow.spec.ts:25:7 › fluxo do consultor › criar diagnóstico → processo → ranking → premissas → relatório → PDF (34.2s)
+  ✓   5 tests\e2e\flow.spec.ts:95:7 › fluxo do consultor › PDF exige login (236ms)
+  ✓   6 tests\e2e\flow.spec.ts:100:7 › fluxo do consultor › validação do formulário de processo: valor fora da faixa é recusado (4.9s)
+  ✓   7 tests\e2e\flow.spec.ts:116:7 › versões e cliente › seed: v1 é retrato fechado e a comparação mostra o que mudou (5.0s)
+  ✓   8 tests\e2e\flow.spec.ts:130:7 › versões e cliente › formulário do cliente: resposta entra como 'revisar' na versão atual (10.3s)
+  ✓   9 tests\e2e\flow.spec.ts:153:7 › versões e cliente › nova versão preserva a anterior (3.8s)
+  ✓  10 tests\e2e\flow.spec.ts:163:5 › layout mobile não gera rolagem horizontal na página (2.4s)
+  ✓  11 tests\e2e\proposta.spec.ts:4:5 › v1.1: proposta é gerada a partir do diagnóstico e baixa em Markdown (6.7s)
+  ✓  12 tests\e2e\proposta.spec.ts:25:5 › v1.1: download da proposta exige login (58ms)
+  ✓  13 tests\e2e\screenshots.spec.ts:21:7 › prints da documentação › desktop (9.9s)
+  ✓  14 tests\e2e\screenshots.spec.ts:66:7 › prints da documentação › formulário do cliente (sem login) (4.3s)
+  ✓  15 tests\e2e\screenshots.spec.ts:84:7 › versão mobile › mobile (3.8s)
+
+  15 passed (2.0m)

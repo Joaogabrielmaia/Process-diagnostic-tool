@@ -35,9 +35,23 @@ Logs completos, com cabeçalho de data, commit, Node e comando: [unitários](exe
 | Integração (`npm run test:integration`) | **11 testes, 1 arquivo, todos passaram** |
 | E2E (`npm run test:e2e`) | **15 testes: 14 passaram e 1 falhou** (12 de fluxo e proposta, com 11 aprovados, mais 3 de geração de prints) |
 
-Falha registrada, não corrigida: `flow.spec.ts:116` (seed: v1 é retrato fechado e a comparação mostra o que mudou) não encontrou o título "Comparação entre versões" em 5 s. Causa não investigada.
+Falha registrada (corrigida depois, veja a reexecução abaixo): `flow.spec.ts:116` (seed: v1 é retrato fechado e a comparação mostra o que mudou) não encontrou o título "Comparação entre versões" em 5 s. Causa: rota fria no servidor de desenvolvimento.
 
 Depois da execução rodei `npm run demo:clean` e restaurei os prints sobrescritos pelo E2E. Os prints 03 e 04 mostravam a aba Roteiro em vez do cadastro e do ranking; a captura de 03 passou a esperar a navegação e os dois foram regenerados e conferidos.
+
+## Reexecução de 2026-10-24 após as correções (commit bd3169b, Node v24.14.0)
+
+Logs: [unitários](execucao-test-bd3169b.txt), [integração](execucao-test-integration-bd3169b.txt) e [E2E](execucao-test-e2e-bd3169b.txt).
+
+| Camada | Resultado |
+|---|---|
+| Tipos, lint e build | sem erros |
+| Unitários | **85 testes, todos passaram** |
+| Integração | **11 testes, todos passaram** |
+| E2E | **15 testes, todos passaram** |
+| Cobertura de `src/lib/scoring` | 100% de linhas, ramos e funções |
+
+A falha de `flow.spec.ts:116` da execução anterior vinha da compilação sob demanda do servidor de desenvolvimento: numa rota fria, 5 s de espera não bastavam (reproduzido 5 de 5 vezes com o servidor recém-iniciado). O limite de `expect` passou a 15 s; com a correção, cinco partidas a frio passaram.
 
 ## Cobertura (medida, v1.0.0)
 

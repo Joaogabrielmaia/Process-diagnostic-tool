@@ -6,7 +6,7 @@
 
 - **Problema:** uma consultoria pequena chega à primeira reunião com um cliente que descreve incômodos, não processos, e a priorização vira opinião.
 - **Solução:** o Mapa conduz a conversa, pontua cada processo com critérios escritos e entrega ranking, matriz e relatório.
-- **Prova:** registro da v1.1.0 com 96 testes no Vitest e 12 E2E, e 100% de cobertura em `src/lib/scoring`. Reexecução de 2026-10-24: 96 no Vitest passaram e 11 de 12 E2E passaram, com 1 falha registrada ([logs](docs/05-qualidade/README.md)).
+- **Prova:** registro da v1.1.0 com 96 testes no Vitest e 12 E2E, e 100% de cobertura em `src/lib/scoring`. Reexecução de 2026-10-24 (commit `bd3169b`): 96 no Vitest e 15 E2E (12 de fluxo e proposta, 3 de prints) passaram ([logs](docs/05-qualidade/README.md)).
 - **Comece por aqui:** [relatório de exemplo (PDF)](docs/exemplo-de-relatorio/diagnostico-clinica-vida-plena-v2.pdf) · [matriz esforço × retorno](docs/screenshots/05-matriz-esforco-retorno.png) · [recusa de IA pontuando](docs/04-arquitetura/reuniao-validacao.md)
 
 ## Ficha técnica
@@ -102,9 +102,10 @@ A mesma linha aparece na [recusa justificada](docs/04-arquitetura/reuniao-valida
 | O que | Resultado | Fonte |
 |---|---|---|
 | v1.1.0, registro do relatório de testes | 96 testes no Vitest e 12 E2E, todos passaram | [relatório de testes](docs/05-qualidade/relatorio-de-testes.md) |
-| Reexecução, 2026-10-24, commit 1b09c61 | Vitest: 85 unitários e 11 de integração passaram. E2E: 14 de 15 passaram; falhou `flow.spec.ts:116` | [unitários](docs/05-qualidade/execucao-test-1b09c61.txt) · [integração](docs/05-qualidade/execucao-test-integration-1b09c61.txt) · [E2E](docs/05-qualidade/execucao-test-e2e-1b09c61.txt) |
-| Cobertura de `src/lib/scoring` (medida na v1.0.0) | 100% de linhas, ramos e funções; o restante não teve cobertura medida | [relatório de testes](docs/05-qualidade/relatorio-de-testes.md#cobertura-medida-v100) |
-| Falhas registradas | 4 no caminho da v1.0.0, mais a falha E2E da reexecução | [relatório de testes](docs/05-qualidade/relatorio-de-testes.md) |
+| Reexecução, 2026-10-24, commit bd3169b | Vitest: 85 unitários e 11 de integração passaram. E2E: 15 de 15 passaram | [unitários](docs/05-qualidade/execucao-test-bd3169b.txt) · [integração](docs/05-qualidade/execucao-test-integration-bd3169b.txt) · [E2E](docs/05-qualidade/execucao-test-e2e-bd3169b.txt) |
+| Reexecução anterior, commit 1b09c61 | E2E: 14 de 15 passaram; falhou `flow.spec.ts:116` por espera de rota fria, corrigida | [log E2E](docs/05-qualidade/execucao-test-e2e-1b09c61.txt) |
+| Cobertura de `src/lib/scoring` (`npm run test:coverage`, 2026-10-24) | 100% de linhas, ramos e funções; o restante não teve cobertura medida | [relatório de testes](docs/05-qualidade/relatorio-de-testes.md#cobertura-medida-v100) |
+| Falhas registradas | 4 no caminho da v1.0.0, mais a falha E2E de 1b09c61, corrigida | [relatório de testes](docs/05-qualidade/relatorio-de-testes.md) |
 
 ## Rodar localmente
 

@@ -1,0 +1,22 @@
+Data: 2026-10-24T10:24:29-03:00
+Commit: bd3169b
+Node: v24.14.0
+Comando: npm test
+-----
+
+> mapa-diagnostico@1.1.0 test
+> vitest run --project unit
+
+
+ RUN  v3.2.7 C:/Users/Joaog/Downloads/Process-diagnostic-tool
+
+ ✓  unit  tests/unit/report.test.ts (4 tests) 12ms
+ ✓  unit  tests/unit/scoring.test.ts (55 tests) 83ms
+ ✓  unit  tests/unit/proposal.test.ts (7 tests) 15ms
+ ✓  unit  tests/unit/portfolio.test.ts (19 tests) 66ms
+
+ Test Files  4 passed (4)
+      Tests  85 passed (85)
+   Start at  10:24:31
+   Duration  1.97s (transform 456ms, setup 0ms, collect 1.12s, tests 177ms, environment 2ms, prepare 3.88s)
+
