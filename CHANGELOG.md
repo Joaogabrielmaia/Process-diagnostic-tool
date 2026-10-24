@@ -5,6 +5,8 @@ Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/); 
 ## [Não lançado]
 
 ### Adicionado
+- Relatório do ciclo de vida em `docs/ciclo-de-vida/` (nove páginas, reuniões, sprints e diagramas) e README ampliado.
+- Testes unitários de volume (500 processos sintéticos) e de configuração de sessão (`tests/unit/robustness.test.ts`), cobrindo F-11 e F-13.
 - Script `npm run test:coverage` (cobertura de `src/lib/scoring`), o comando que o relatório de testes já citava.
 
 ### Corrigido
