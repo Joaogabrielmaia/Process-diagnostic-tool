@@ -1,3 +1,17 @@
+# Episódio 0 — Sobre este caso
+
+O Mapa é uma ferramenta que o consultor usa na primeira conversa com um cliente para decidir onde vale automatizar.
+O caso é inventado: a consultoria Atalho Automação e a Clínica Vida Plena não existem, e os números do diagnóstico foram criados para o estudo.
+Esta página separa o que é simulado do que é real, para que ninguém leia o material como operação de cliente.
+
+| Documento | O que contém | Itens |
+|---|---|---|
+| [Sobre este caso](#sobre-este-caso) | Cenário, personagens fictícios e a tabela Real × simulado | 5 personagens · 5 linhas |
+
+← Anterior · [Índice](../INDEX.md) · [Próximo →](../01-discovery/README.md)
+
+---
+
 # Sobre este caso
 
 Este projeto é um estudo de caso sobre diagnóstico de processos para consultorias de automação: descobrir o problema, definir critérios, decidir, construir, testar e evoluir.
