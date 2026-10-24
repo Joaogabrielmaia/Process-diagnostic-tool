@@ -1,6 +1,6 @@
 # Reunião de retrospectiva
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes:** Marcos Ribeiro, Camila Duarte e eu, depois da [aceitação](../05-qualidade/reuniao-aceitacao.md) da v1.0.
 

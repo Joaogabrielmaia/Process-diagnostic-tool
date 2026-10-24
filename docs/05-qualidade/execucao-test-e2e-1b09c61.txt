@@ -1,0 +1,57 @@
+Data: 2026-10-24T00:47:40-03:00
+Commit: 1b09c61
+Node: v24.14.0
+Comando: npm run test:e2e
+-----
+
+> mapa-diagnostico@1.1.0 test:e2e
+> playwright test
+
+
+Running 15 tests using 1 worker
+
+  ✓   1 tests\e2e\flow.spec.ts:5:7 › acesso › rotas internas exigem login (3.1s)
+  ✓   2 tests\e2e\flow.spec.ts:10:7 › acesso › senha errada mostra erro genérico (2.5s)
+  ✓   3 tests\e2e\flow.spec.ts:18:7 › acesso › link do cliente com token inválido não revela nada (2.9s)
+  ✓   4 tests\e2e\flow.spec.ts:25:7 › fluxo do consultor › criar diagnóstico → processo → ranking → premissas → relatório → PDF (33.4s)
+  ✓   5 tests\e2e\flow.spec.ts:95:7 › fluxo do consultor › PDF exige login (140ms)
+  ✓   6 tests\e2e\flow.spec.ts:100:7 › fluxo do consultor › validação do formulário de processo: valor fora da faixa é recusado (5.8s)
+  ✘   7 tests\e2e\flow.spec.ts:116:7 › versões e cliente › seed: v1 é retrato fechado e a comparação mostra o que mudou (8.3s)
+  ✓   8 tests\e2e\flow.spec.ts:129:7 › versões e cliente › formulário do cliente: resposta entra como 'revisar' na versão atual (15.2s)
+  ✓   9 tests\e2e\flow.spec.ts:152:7 › versões e cliente › nova versão preserva a anterior (3.7s)
+  ✓  10 tests\e2e\flow.spec.ts:162:5 › layout mobile não gera rolagem horizontal na página (3.1s)
+  ✓  11 tests\e2e\proposta.spec.ts:4:5 › v1.1: proposta é gerada a partir do diagnóstico e baixa em Markdown (8.3s)
+  ✓  12 tests\e2e\proposta.spec.ts:25:5 › v1.1: download da proposta exige login (72ms)
+  ✓  13 tests\e2e\screenshots.spec.ts:21:7 › prints da documentação › desktop (12.7s)
+  ✓  14 tests\e2e\screenshots.spec.ts:65:7 › prints da documentação › formulário do cliente (sem login) (4.9s)
+  ✓  15 tests\e2e\screenshots.spec.ts:83:7 › versão mobile › mobile (5.7s)
+
+
+  1) tests\e2e\flow.spec.ts:116:7 › versões e cliente › seed: v1 é retrato fechado e a comparação mostra o que mudou 
+
+    Error: expect(locator).toBeVisible() failed
+
+    Locator: getByRole('heading', { name: 'Comparação entre versões' })
+    Expected: visible
+    Timeout: 5000ms
+    Error: element(s) not found
+
+    Call log:
+      - Expect "toBeVisible" getByRole('heading', { name: 'Comparação entre versões' }) with timeout 5000ms
+      - waiting for getByRole('heading', { name: 'Comparação entre versões' })
+
+
+      122 |
+      123 |     await page.getByRole("link", { name: "Versões" }).click();
+    > 124 |     await expect(page.getByRole("heading", { name: "Comparação entre versões" })).toBeVisible();
+          |                                                                                   ^
+      125 |     await expect(page.getByText("Processos novos na v2")).toBeVisible();
+      126 |     await expect(page.getByText("Admissão de colaboradores (documentos)")).toBeVisible();
+      127 |   });
+        at C:\Users\Joaog\Downloads\Process-diagnostic-tool\tests\e2e\flow.spec.ts:124:83
+
+    Error Context: test-results\flow-versões-e-cliente-see-2a11a-mparação-mostra-o-que-mudou\error-context.md
+
+  1 failed
+    tests\e2e\flow.spec.ts:116:7 › versões e cliente › seed: v1 é retrato fechado e a comparação mostra o que mudou 
+  14 passed (2.2m)

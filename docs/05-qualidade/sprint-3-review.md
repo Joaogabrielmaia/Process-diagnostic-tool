@@ -11,7 +11,7 @@
 | Versões, cópia e comparação | RF-12 |
 | Formulário do cliente por link | RF-14 |
 | Resumo por IA com `MockProvider` e fallback | RF-15 |
-| 10 testes E2E, 13 prints, 2 PDFs de exemplo | — |
+| 10 testes E2E, 13 prints (v1.0), 2 PDFs de exemplo | — |
 
 Commits: `test(e2e): ...` e `docs(evidencias): ...`.
 

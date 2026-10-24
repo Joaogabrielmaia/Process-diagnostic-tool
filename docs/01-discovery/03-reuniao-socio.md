@@ -1,8 +1,8 @@
 # 03 · Reunião 1: sócio-consultor (Marcos Ribeiro)
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
-**Objetivo:** entender o que o Marcos espera da ferramenta. **Participantes:** Marcos Ribeiro (interpretado pelo Claude) e eu.
+**Objetivo:** entender o que o Marcos espera da ferramenta. **Participantes:** Marcos Ribeiro (persona do sócio) e eu.
 
 ## Resumo da conversa
 

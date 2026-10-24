@@ -25,9 +25,37 @@ Tudo abaixo foi **executado** no meu computador (Windows 11, Node 24, PostgreSQL
 
 Falha encontrada na v1.1: ao rodar unitários e integração juntos, o `beforeAll` da integração (que executa `prisma db push`) estourou o limite padrão de 10 s de hook. Não era erro de lógica: aumentei `hookTimeout` para 90 s no projeto de integração e as duas execuções (junto e isolada) passaram. A tabela de resumo e as contagens acima da v1.0.0 abaixo refletem a v1.0.0; a v1.1.0 só acrescenta o que está nesta seção.
 
+## Reexecução de 2026-10-24 (commit 1b09c61, Node v24.14.0)
+
+Logs completos, com cabeçalho de data, commit, Node e comando: [unitários](execucao-test-1b09c61.txt), [integração](execucao-test-integration-1b09c61.txt) e [E2E](execucao-test-e2e-1b09c61.txt).
+
+| Camada | Resultado |
+|---|---|
+| Unitários (`npm test`) | **85 testes, 4 arquivos, todos passaram** (55 em `scoring.test.ts`) |
+| Integração (`npm run test:integration`) | **11 testes, 1 arquivo, todos passaram** |
+| E2E (`npm run test:e2e`) | **15 testes: 14 passaram e 1 falhou** (12 de fluxo e proposta, com 11 aprovados, mais 3 de geração de prints) |
+
+Falha registrada (corrigida depois, veja a reexecução abaixo): `flow.spec.ts:116` (seed: v1 é retrato fechado e a comparação mostra o que mudou) não encontrou o título "Comparação entre versões" em 5 s. Causa: rota fria no servidor de desenvolvimento.
+
+Depois da execução rodei `npm run demo:clean` e restaurei os prints sobrescritos pelo E2E. Os prints 03 e 04 mostravam a aba Roteiro em vez do cadastro e do ranking; a captura de 03 passou a esperar a navegação e os dois foram regenerados e conferidos.
+
+## Reexecução de 2026-10-24 após as correções (commit bd3169b, Node v24.14.0)
+
+Logs: [unitários](execucao-test-bd3169b.txt), [integração](execucao-test-integration-bd3169b.txt) e [E2E](execucao-test-e2e-bd3169b.txt).
+
+| Camada | Resultado |
+|---|---|
+| Tipos, lint e build | sem erros |
+| Unitários | **85 testes, todos passaram** |
+| Integração | **11 testes, todos passaram** |
+| E2E | **15 testes, todos passaram** |
+| Cobertura de `src/lib/scoring` | 100% de linhas, ramos e funções |
+
+A falha de `flow.spec.ts:116` da execução anterior vinha da compilação sob demanda do servidor de desenvolvimento: numa rota fria, 5 s de espera não bastavam (reproduzido 5 de 5 vezes com o servidor recém-iniciado). O limite de `expect` passou a 15 s; com a correção, cinco partidas a frio passaram.
+
 ## Cobertura (medida, v1.0.0)
 
-`npx vitest run --project unit --coverage`, restrita a `src/lib/scoring/**`:
+`npm run test:coverage` (`vitest run --project unit --coverage`), restrita a `src/lib/scoring/**`:
 
 | Arquivo | Linhas | Ramos | Funções |
 |---|---|---|---|

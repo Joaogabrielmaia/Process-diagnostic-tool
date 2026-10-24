@@ -58,6 +58,13 @@
   .no-print {
     display: none !important;
   }
+  /* tabelas do relatório não podem passar da largura útil da folha A4 */
+  table {
+    min-width: 0 !important;
+  }
+  .overflow-x-auto {
+    overflow: visible !important;
+  }
   .avoid-break {
     break-inside: avoid;
   }

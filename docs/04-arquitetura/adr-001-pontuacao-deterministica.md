@@ -15,7 +15,7 @@ A opção 3. A pontuação é uma função pura (`src/lib/scoring`), sem I/O. A 
 
 ## Motivo
 - **Explicabilidade:** o cliente pergunta "por que esse primeiro?". Com regras, respondo mostrando a nota de cada critério. Com IA, eu responderia "o modelo achou".
-- **Reprodutibilidade:** mesma entrada, mesma saída; permite testes unitários com valor exato (74 testes de pontuação e portfólio).
+- **Reprodutibilidade:** mesma entrada, mesma saída; permite testes unitários com valor exato (74 testes de pontuação e portfólio, na sprint 1).
 - **Privacidade:** a IA nunca recebe descrição de processos de pacientes; só números agregados.
 - **Custo e disponibilidade:** o produto funciona sem chave, sem rede e sem custo por uso.
 

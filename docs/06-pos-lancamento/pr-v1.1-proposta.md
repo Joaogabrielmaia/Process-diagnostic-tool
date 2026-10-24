@@ -2,7 +2,7 @@
 
 Branch: `feat/proposta` → `main` · Requisito: **RF-17** · História: **US-14**
 
-> Este repositório não foi publicado em servidor nem teve PR aberto em plataforma: a descrição fica neste arquivo, e a integração foi feita localmente com `git merge --no-ff`.
+> A aplicação não está hospedada; o código e a documentação estão neste repositório. Não houve PR aberto em plataforma: a descrição fica neste arquivo, e a integração foi feita localmente com `git merge --no-ff`.
 
 ## O que muda
 Adiciona a aba **Proposta**, que transforma o diagnóstico em um modelo de proposta comercial, e um endpoint de download em Markdown.

@@ -2,6 +2,16 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/); versões seguem [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Não lançado]
+
+### Adicionado
+- Script `npm run test:coverage` (cobertura de `src/lib/scoring`), o comando que o relatório de testes já citava.
+
+### Corrigido
+- E2E: o teste de comparação de versões falhava na primeira visita a uma rota fria do servidor de desenvolvimento (compilação sob demanda acima dos 5 s de espera). O limite de `expect` passou a 15 s e o teste espera a navegação.
+- PDF: a tabela do ranking saía cortada à direita na página 1 porque `min-width` e `overflow-x-auto` da tela valiam também na impressão. O CSS de impressão agora zera os dois. Os PDFs de exemplo foram gerados de novo; os números não mudaram.
+- E2E: porta do app e do Playwright lida de `PORT` (padrão 3000).
+
 ## [1.1.0]
 
 ### Adicionado

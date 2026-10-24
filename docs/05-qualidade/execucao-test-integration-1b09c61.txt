@@ -1,0 +1,20 @@
+Data: 2026-10-24T00:47:15-03:00
+Commit: 1b09c61
+Node: v24.14.0
+Comando: npm run test:integration
+-----
+
+> mapa-diagnostico@1.1.0 test:integration
+> vitest run --project integration --no-file-parallelism
+
+
+ RUN  v3.2.7 C:/Users/Joaog/Downloads/Process-diagnostic-tool
+
+ ✓  integration  tests/integration/services.test.ts (11 tests) 6302ms
+   ✓ sessão > senha: hash não guarda o texto e verifica corretamente  440ms
+
+ Test Files  1 passed (1)
+      Tests  11 passed (11)
+   Start at  00:47:18
+   Duration  8.03s (transform 234ms, setup 47ms, collect 816ms, tests 6.30s, environment 0ms, prepare 535ms)
+

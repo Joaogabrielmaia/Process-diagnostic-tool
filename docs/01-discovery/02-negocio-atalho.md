@@ -1,6 +1,6 @@
 # 02 · O negócio: Atalho Automação
 
-> Simulação: o Claude interpretou o cliente nesta conversa. A Atalho Automação é fictícia; as descrições abaixo vêm de uma conversa simulada com os sócios.
+> Reunião simulada; pessoas e empresa fictícias. A Atalho Automação é fictícia; as descrições abaixo vêm de uma conversa simulada com os sócios.
 
 ## Quem é
 

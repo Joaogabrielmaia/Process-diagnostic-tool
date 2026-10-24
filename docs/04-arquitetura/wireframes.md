@@ -1,6 +1,6 @@
 # Wireframes
 
-Desenhados antes de codar, em ASCII, para discutir na [reunião de validação](reuniao-validacao.md). As telas finais estão nos [prints](../screenshots/).
+Wireframes das 6 telas em ASCII, usados para discutir na [reunião de validação](reuniao-validacao.md). As telas finais estão nos [prints](../screenshots/).
 
 ## Lista de diagnósticos
 

@@ -1,3 +1,20 @@
+# Episódio 3 — Metodologia
+
+Este é o centro da série: como cada processo recebe nota de potencial e de esforço, com critérios, pesos e fórmulas escritos e contas conferidas à mão.
+A economia sai como faixa de três cenários, e dado faltante entra com valor cauteloso, nunca zero.
+A análise de sensibilidade mostra o que muda quando as premissas mudam, e a lista de limitações diz o que a ferramenta não sabe.
+
+| Documento | O que contém | Itens |
+|---|---|---|
+| [Metodologia de pontuação](#metodologia-de-pontuação) | Critérios, pesos, fórmulas, quadrantes e roteiro 30/60/90 | 7 critérios |
+| [Exemplos de cálculo](exemplos-de-calculo.md) | Três contas passo a passo, com processo de referência e dado faltante | 3 exemplos |
+| [Sensibilidade](sensibilidade.md) | Variação de premissas e do corte de potencial; comparação v1 × v2 | 2 versões comparadas |
+| [Limitações](limitacoes.md) | O que a ferramenta não mede nem sabe | 15 limitações |
+
+[← Anterior](../02-definicao/README.md) · [Índice](../INDEX.md) · [Próximo →](../04-arquitetura/README.md)
+
+---
+
 # Metodologia de pontuação
 
 Este é o documento central do projeto. Aqui explico **o que o Mapa calcula, com que critérios, por que escolhi cada peso e onde a conta pode errar**. Toda fórmula descrita está implementada em [`src/lib/scoring`](../../src/lib/scoring) e coberta por testes ([relatório de testes](../05-qualidade/relatorio-de-testes.md)).
@@ -8,7 +25,7 @@ Este é o documento central do projeto. Aqui explico **o que o Mapa calcula, com
 
 ```mermaid
 flowchart LR
-    I[Dados do processo<br/>9 campos] --> H[Horas por mês]
+    I[Dados do processo<br/>10 campos] --> H[Horas por mês]
     I --> C[7 critérios 0-100]
     C --> P[Potencial]
     C --> E[Esforço]
@@ -159,6 +176,13 @@ Capacidade padrão: 80 horas de implantação por janela de 30 dias. Ordem de en
 ## Ajustando a metodologia
 
 Pesos, cortes e catálogo de ferramentas são valores de `ScoringConfig`, guardados **por versão do diagnóstico**. A tela de premissas edita o retorno, o investimento e a capacidade; os pesos ficam no código padrão neste MVP (a edição dos pesos pela tela está no [roadmap](../06-pos-lancamento/roadmap.md)). `validateConfig` recusa pesos que não somem 1.
+
+## De onde vêm os paybacks
+
+- **15,3 meses** (relatório e [sensibilidade](sensibilidade.md)): investimento realista somado ÷ economia mensal realista somada, sobre todos os processos fora do quadrante *Evitar* (`summarize`, em `src/lib/scoring/summary.ts`).
+- **13,9 meses** (seção 7 do relatório, pré-escopo): a mesma divisão, só sobre os processos em *Começar já* e *Planejar*, que formam o escopo sugerido (`src/components/ReportView.tsx`).
+- **9,1 meses** (proposta v1.1): a mesma divisão, mas só sobre os processos que couberam nos 90 dias do roteiro (`src/lib/proposal.ts`); por isso difere do relatório.
+- **Payback de cada processo:** investimento ÷ economia mensal do próprio processo, por cenário (`src/lib/scoring/engine.ts`).
 
 ## Onde seguir
 

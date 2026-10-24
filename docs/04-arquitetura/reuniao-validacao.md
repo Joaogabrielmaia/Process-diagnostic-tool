@@ -1,6 +1,6 @@
 # Reunião de validação dos wireframes e das decisões
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes:** Marcos Ribeiro (sócio-consultor), Camila Duarte (analista), Ricardo Tavares (dono da Vida Plena) e eu. Mostrei os [wireframes](wireframes.md) e a [metodologia](../03-metodologia/README.md).
 

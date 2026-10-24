@@ -30,6 +30,7 @@ test.describe("prints da documentação", () => {
 
     await page.locator("details").first().locator("summary").click();
     await page.getByRole("link", { name: "Editar Confirmação de consultas por WhatsApp" }).click();
+    await page.waitForURL("**/processos/**");
     await shot(page, "03-cadastro-de-processo.png");
 
     await page.goto(page.url().replace(/\/processos\/.*/, "/ranking"));
