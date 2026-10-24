@@ -226,6 +226,4 @@ Evolução prevista: pesos e cortes editáveis pela tela, CI com lint, tipos e t
 
 ## Nota de contexto acadêmico
 
-Este material integra um estudo de caso. Empresa, pessoas e dados do diagnóstico são fictícios. Reuniões, cronograma, sprints e cerimônias foram elaborados para compor o cenário de aprendizagem: as datas do cronograma acadêmico não correspondem às datas dos commits, das tags e das execuções de teste, que seguem os registros do repositório. Os valores de economia e payback são estimativas calculadas sobre dados criados para o estudo, não resultados medidos.
-
-Registro de uso de IA: ferramentas de IA generativa foram usadas na construção do cenário do estudo de caso, incluindo a interpretação das personas nas reuniões simuladas e a redação de parte dos registros de planejamento.
+Este repositório é um estudo de caso. A Rota Fácil Software, as pessoas, os clientes e os dados são fictícios. Reuniões, atas, o cronograma das sprints e as cerimônias foram elaborados para compor o cenário de aprendizagem, com participantes identificados por papel; Houve uso de IA generativa (Claude, da Anthropic) na construção do cenário, incluindo a simulação das reuniões, e como apoio ao desenvolvimento e à documentação. O modelo do cenário, as decisões de escopo e de arquitetura e a verificação dos resultados foram definidos e conferidos pelo autor. Os resultados de testes e de CI citados vêm de execuções registradas e não são resultados ilustrativos.
