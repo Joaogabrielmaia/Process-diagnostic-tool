@@ -2,6 +2,12 @@
 
 Formato baseado em [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/); versões seguem [SemVer](https://semver.org/lang/pt-BR/).
 
+## [Não lançado]
+
+### Corrigido
+- E2E: o teste de comparação de versões falhava na primeira visita a uma rota fria do servidor de desenvolvimento (compilação sob demanda acima dos 5 s de espera). O limite de `expect` passou a 15 s e o teste espera a navegação.
+- E2E: porta do app e do Playwright lida de `PORT` (padrão 3000).
+
 ## [1.1.0]
 
 ### Adicionado

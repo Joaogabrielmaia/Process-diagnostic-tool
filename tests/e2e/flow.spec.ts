@@ -121,6 +121,7 @@ test.describe("versões e cliente", () => {
     await expect(page.getByRole("link", { name: "Adicionar processo" })).toHaveCount(0);
 
     await page.getByRole("link", { name: "Versões" }).click();
+    await page.waitForURL("**/versoes*");
     await expect(page.getByRole("heading", { name: "Comparação entre versões" })).toBeVisible();
     await expect(page.getByText("Processos novos na v2")).toBeVisible();
     await expect(page.getByText("Admissão de colaboradores (documentos)")).toBeVisible();
