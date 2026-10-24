@@ -1,0 +1,11 @@
+flowchart LR
+    subgraph LOCAL["Existe: máquina do consultor"]
+        APP["Aplicação Next.js"] --> DB[("PostgreSQL em Docker")]
+        APP --> CHR["Chromium para o PDF"]
+    end
+    subgraph PLAN["Planejado: ambiente compartilhado"]
+        APP2["Aplicação"] --> DB2[("PostgreSQL gerenciado")]
+        APP2 --> CHR2["Chromium no servidor"]
+        APP2 --> LOG["Logs e alertas"]
+    end
+    LOCAL -. "migrations e backup antes de migrar" .-> PLAN

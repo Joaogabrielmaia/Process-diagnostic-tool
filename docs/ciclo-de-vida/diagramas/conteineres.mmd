@@ -1,0 +1,20 @@
+flowchart TB
+    subgraph APP["Aplicação Next.js"]
+        UI["Telas<br/>server components e actions"]
+        VAL["validation.ts<br/>Zod"]
+        SVC["services/diagnoses.ts"]
+        SC["scoring<br/>funções puras"]
+        REP["ReportView e report.ts"]
+        SUM["summary/provider.ts<br/>Mock ou externo"]
+        AUTH["auth.ts<br/>sessão em cookie assinado"]
+        PDFM["pdf.ts"]
+    end
+    UI --> VAL --> SVC
+    UI --> AUTH
+    SVC --> BD[("PostgreSQL via Prisma")]
+    SVC --> SC
+    REP --> SC
+    REP --> SUM
+    PDFM --> CHR["Chromium"]
+    CHR --> IMP["/imprimir/id"]
+    IMP --> REP

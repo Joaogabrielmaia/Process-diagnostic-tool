@@ -1,0 +1,15 @@
+flowchart TD
+    I["Dados do processo"] --> M{"Campo em branco?"}
+    M -- sim --> V["Valor cauteloso e campo listado como faltante"]
+    M -- não --> C["Sete critérios, de 0 a 100"]
+    V --> C
+    C --> P["Potencial<br/>20 freq, 15 vol, 25 repet, 40 impacto"]
+    C --> E["Esforço<br/>35 digitalização inv, 35 integração inv, 30 risco"]
+    P --> Q{"Potencial 50 ou mais?"}
+    E --> Q2{"Esforço abaixo de 50?"}
+    Q -- sim --> Q2
+    Q -- não --> OP["Oportunista ou Evitar"]
+    Q2 -- sim --> CJ["Começar já"]
+    Q2 -- não --> PL["Planejar"]
+    P --> PR["Prioridade<br/>60 potencial e 40 de 100 menos esforço"]
+    E --> PR

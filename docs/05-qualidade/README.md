@@ -9,6 +9,6 @@ Os logs de 2026-10-24 mostram duas execuções: a de 1b09c61, com um teste E2E q
 | [Relatório de testes](relatorio-de-testes.md) | Execuções da v1.0.0 e v1.1.0, cobertura, falhas e o que não foi testado | 4 falhas registradas |
 | [Reunião de aceitação](reuniao-aceitacao.md) | Histórias contra o que rodou (reunião simulada) | 14 US |
 | [Sprint 1](sprint-1-review.md) · [Sprint 2](sprint-2-review.md) · [Sprint 3](sprint-3-review.md) | Entregas, resultado real e problemas por sprint | 3 reviews |
-| Logs de execução | [unitários](execucao-test-bd3169b.txt) · [integração](execucao-test-integration-bd3169b.txt) · [E2E](execucao-test-e2e-bd3169b.txt); anteriores: [E2E 1b09c61](execucao-test-e2e-1b09c61.txt) | 6 logs, 2026-10-24 |
+| Logs de execução | [unitários 1f4473f](execucao-test-1f4473f.txt) · [cobertura 1f4473f](execucao-coverage-1f4473f.txt) · [integração bd3169b](execucao-test-integration-bd3169b.txt) · [E2E bd3169b](execucao-test-e2e-bd3169b.txt); anteriores: [E2E 1b09c61](execucao-test-e2e-1b09c61.txt) | logs de 2026-10-24 |
 
 [← Anterior](../04-arquitetura/README.md) · [Índice](../INDEX.md) · [Próximo →](../06-pos-lancamento/README.md)

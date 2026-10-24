@@ -1,0 +1,58 @@
+erDiagram
+    User ||--o{ Diagnosis : conduz
+    Diagnosis ||--|{ DiagnosisVersion : "tem versoes"
+    Diagnosis ||--o{ ClientInvite : "gera links"
+    DiagnosisVersion ||--o{ Process : contem
+    User {
+        string id PK
+        string email UK
+        string name
+        string passwordHash
+        enum role
+        datetime createdAt
+    }
+    Diagnosis {
+        string id PK
+        string clientName
+        string sector
+        int headcount
+        string consultantId FK
+        datetime createdAt
+    }
+    DiagnosisVersion {
+        string id PK
+        string diagnosisId FK
+        int number "unico com diagnosisId"
+        string label
+        json premises
+        json config
+        datetime createdAt
+    }
+    Process {
+        string id PK
+        string versionId FK
+        string key "estavel entre versoes"
+        string name
+        enum area
+        enum frequency
+        int volumePerExecution "nulo = dado faltante"
+        float minutesPerExecution
+        int people
+        string_array tools
+        int standardization
+        float errorRatePct
+        int dataDigitization
+        int dependencies
+        enum sensitiveData
+        enum source
+        boolean needsReview
+        string notes
+    }
+    ClientInvite {
+        string id PK
+        string diagnosisId FK
+        string token UK
+        datetime expiresAt
+        datetime createdAt
+        datetime submittedAt
+    }

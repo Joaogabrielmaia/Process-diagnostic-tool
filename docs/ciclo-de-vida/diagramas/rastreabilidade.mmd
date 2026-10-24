@@ -1,0 +1,8 @@
+flowchart LR
+    N[Necessidade<br/>reunião] --> RQ[Requisito<br/>RF / RNF]
+    RQ --> H[História<br/>US]
+    RQ --> RG[Regra<br/>RN]
+    H --> IM[Implementação<br/>src/]
+    RG --> IM
+    IM --> T[Teste<br/>unit / integração / E2E]
+    T --> EV[Evidência<br/>logs e prints]

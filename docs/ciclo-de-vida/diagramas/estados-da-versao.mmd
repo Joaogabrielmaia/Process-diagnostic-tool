@@ -1,0 +1,8 @@
+stateDiagram-v2
+    [*] --> Editavel : cria diagnostico, versao 1
+    Editavel --> SomenteLeitura : cria nova versao
+    SomenteLeitura --> [*]
+    note right of Editavel
+        so a versao mais recente
+        aceita edicao
+    end note

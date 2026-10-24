@@ -1,0 +1,37 @@
+Data: 2026-10-24T15:01:31-03:00
+Commit: 1f4473f
+Node: v24.14.0
+Comando: npm run test:coverage
+-----
+
+> mapa-diagnostico@1.1.0 test:coverage
+> vitest run --project unit --coverage
+
+
+ RUN  v3.2.7 C:/Users/Joaog/Downloads/Process-diagnostic-tool
+      Coverage enabled with v8
+
+ ✓  unit  tests/unit/report.test.ts (4 tests) 17ms
+ ✓  unit  tests/unit/scoring.test.ts (55 tests) 112ms
+ ✓  unit  tests/unit/proposal.test.ts (7 tests) 27ms
+ ✓  unit  tests/unit/portfolio.test.ts (19 tests) 100ms
+ ✓  unit  tests/unit/robustness.test.ts (4 tests) 398ms
+
+ Test Files  5 passed (5)
+      Tests  89 passed (89)
+   Start at  15:01:34
+   Duration  3.87s (transform 834ms, setup 0ms, collect 2.44s, tests 654ms, environment 4ms, prepare 1.21s)
+
+ % Coverage report from v8
+------------|---------|----------|---------|---------|-------------------
+File        | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+------------|---------|----------|---------|---------|-------------------
+All files   |     100 |      100 |     100 |     100 |                   
+ compare.ts |     100 |      100 |     100 |     100 |                   
+ config.ts  |     100 |      100 |     100 |     100 |                   
+ engine.ts  |     100 |      100 |     100 |     100 |                   
+ index.ts   |     100 |      100 |     100 |     100 |                   
+ roadmap.ts |     100 |      100 |     100 |     100 |                   
+ summary.ts |     100 |      100 |     100 |     100 |                   
+ types.ts   |     100 |      100 |     100 |     100 |                   
+------------|---------|----------|---------|---------|-------------------
