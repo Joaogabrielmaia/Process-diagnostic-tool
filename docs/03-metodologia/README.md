@@ -8,7 +8,7 @@ Este é o documento central do projeto. Aqui explico **o que o Mapa calcula, com
 
 ```mermaid
 flowchart LR
-    I[Dados do processo<br/>9 campos] --> H[Horas por mês]
+    I[Dados do processo<br/>10 campos] --> H[Horas por mês]
     I --> C[7 critérios 0-100]
     C --> P[Potencial]
     C --> E[Esforço]
@@ -159,6 +159,12 @@ Capacidade padrão: 80 horas de implantação por janela de 30 dias. Ordem de en
 ## Ajustando a metodologia
 
 Pesos, cortes e catálogo de ferramentas são valores de `ScoringConfig`, guardados **por versão do diagnóstico**. A tela de premissas edita o retorno, o investimento e a capacidade; os pesos ficam no código padrão neste MVP (a edição dos pesos pela tela está no [roadmap](../06-pos-lancamento/roadmap.md)). `validateConfig` recusa pesos que não somem 1.
+
+## De onde vêm os paybacks
+
+- **15,3 meses** (relatório e [sensibilidade](sensibilidade.md)): investimento realista somado ÷ economia mensal realista somada, sobre todos os processos fora do quadrante *Evitar* (`summarize`, em `src/lib/scoring/summary.ts`).
+- **9,1 meses** (proposta v1.1): a mesma divisão, mas só sobre os processos que couberam nos 90 dias do roteiro (`src/lib/proposal.ts`); por isso difere do relatório.
+- **Payback de cada processo:** investimento ÷ economia mensal do próprio processo, por cenário (`src/lib/scoring/engine.ts`).
 
 ## Onde seguir
 

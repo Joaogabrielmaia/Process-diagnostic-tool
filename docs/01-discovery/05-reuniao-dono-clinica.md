@@ -1,8 +1,8 @@
 # 05 · Reunião 3: dono da clínica (Ricardo Tavares, Clínica Vida Plena)
 
-> Simulação: o Claude interpretou o cliente nesta conversa. A Clínica Vida Plena é fictícia.
+> Reunião simulada; pessoas e empresa fictícias. A Clínica Vida Plena é fictícia.
 
-**Objetivo:** ver o diagnóstico pela ótica de quem o recebe e levantar os processos da clínica. **Participantes:** Ricardo Tavares (interpretado pelo Claude), fisioterapeuta e dono, e eu no papel de consultor.
+**Objetivo:** ver o diagnóstico pela ótica de quem o recebe e levantar os processos da clínica. **Participantes:** Ricardo Tavares (persona do cliente), fisioterapeuta e dono, e eu no papel de consultor.
 
 ## O que o Ricardo contou
 

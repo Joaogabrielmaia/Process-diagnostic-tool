@@ -1,6 +1,6 @@
 # Reunião de aceitação
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
 **Participantes:** Marcos Ribeiro, Camila Duarte e eu. Percorremos as [histórias](../02-definicao/historias.md) contra o que **rodou de verdade** (resultados em [relatório de testes](relatorio-de-testes.md)). Os vereditos abaixo refletem as execuções reais, não opinião.
 
@@ -9,7 +9,7 @@
 | US-01 | Cria diagnóstico com versão 1 | Integração + E2E passaram | Aceita |
 | US-02 | 5 áreas com 3 perguntas e o porquê | Print [02](../screenshots/02-roteiro-por-area.png); sem teste automatizado do texto | Aceita, com ressalva: sem teste automatizado do conteúdo |
 | US-03 | Campo vazio vira faltante; fora da faixa recusado | Integração + E2E | Aceita |
-| US-04 | Ranking com notas por critério | Print [04](../screenshots/04-ranking.png); 55 testes de pontuação | Aceita |
+| US-04 | Ranking com notas por critério | Print [04](../screenshots/04-ranking.png); 55 testes de pontuação (na sprint 1) | Aceita |
 | US-05 | Matriz com 4 quadrantes e texto alternativo | Print [05](../screenshots/05-matriz-esforco-retorno.png); E2E confere o gráfico por nome acessível | Aceita |
 | US-06 | Premissas recalculam; ordem inválida recusada | E2E (dobrou o custo da hora e a economia mudou; recusou redução inválida) | Aceita |
 | US-07 | Relatório com 8 seções | E2E confere os 8 títulos | Aceita |

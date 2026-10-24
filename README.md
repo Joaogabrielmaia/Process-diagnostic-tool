@@ -59,7 +59,7 @@ Versão completa em [`docs/03-metodologia`](docs/03-metodologia/README.md).
 
 ```mermaid
 flowchart LR
-    I[9 campos por processo] --> C[7 critérios, 0 a 100]
+    I[10 campos por processo] --> C[7 critérios, 0 a 100]
     C --> P[Potencial]
     C --> E[Esforço]
     P --> Q{Quadrante}
@@ -94,7 +94,7 @@ Conduz a conversa por área, com três perguntas-chave e o porquê de cada uma. 
 ### Cadastro de processo
 [![Cadastro](docs/screenshots/03-cadastro-de-processo.png)](docs/screenshots/03-cadastro-de-processo.png)
 
-Nove campos, com a escala explicada em cada um. **Decisão:** a validação roda no servidor (o limite do navegador não é a defesa) e vazio vira `null`, nunca zero.
+Dez campos de levantamento (a frequência e nove opcionais), com a escala explicada em cada um. **Decisão:** a validação roda no servidor (o limite do navegador não é a defesa) e vazio vira `null`, nunca zero.
 
 ### Ranking
 [![Ranking](docs/screenshots/04-ranking.png)](docs/screenshots/04-ranking.png)
@@ -187,7 +187,7 @@ Na v1.1.0, no meu computador: **96 testes no Vitest** (85 unitários e 11 de int
 
 ## Como rodar localmente
 
-Requisitos: Node 20+, Docker e Git. Nada é publicado: tudo roda na sua máquina.
+Requisitos: Node 20+, Docker e Git. A aplicação não está hospedada; o código e a documentação estão neste repositório. Tudo roda na sua máquina.
 
 ```bash
 git clone https://github.com/Joaogabrielmaia/Process-diagnostic-tool.git

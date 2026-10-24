@@ -1,8 +1,8 @@
 # 04 · Reunião 2: analista de projetos (Camila Duarte)
 
-> Simulação: o Claude interpretou o cliente nesta conversa.
+> Reunião simulada; pessoas e empresa fictícias.
 
-**Objetivo:** entender o que a analista precisa para transformar o diagnóstico em projeto. **Participantes:** Camila Duarte (interpretada pelo Claude) e eu.
+**Objetivo:** entender o que a analista precisa para transformar o diagnóstico em projeto. **Participantes:** Camila Duarte (persona da analista) e eu.
 
 ## Resumo da conversa
 
@@ -16,11 +16,11 @@
 
 | Marcos (rapidez) | Camila (profundidade) |
 |---|---|
-| Menos perguntas, 45 minutos | Nove campos por processo, com rastreabilidade |
+| Menos perguntas, 45 minutos | Dez campos por processo, com rastreabilidade |
 
 **Decisões:**
 
-1. **Nove campos por processo**, mas **todos exceto frequência são opcionais**. A Camila tem o que precisa quando o cliente sabe; o Marcos não trava quando o cliente não sabe.
+1. **Dez campos por processo**, mas **todos exceto frequência são opcionais**. A Camila tem o que precisa quando o cliente sabe; o Marcos não trava quando o cliente não sabe.
 2. **Completude** como métrica visível: cada processo mostra "falta: taxa de erro, dependências". A Camila sabe o que voltar a perguntar; o Marcos vê o que ainda falta sem interromper a conversa.
 3. **Dado faltante nunca vira zero.** Entra um valor cauteloso e a faixa de retorno se alarga (veja [metodologia](../03-metodologia/README.md), RN-08).
 4. **Formulário curto antes da reunião** adianta o básico, para os 45 minutos serem usados em completar e validar.

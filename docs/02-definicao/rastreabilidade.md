@@ -7,7 +7,7 @@ Do requisito ao código e ao teste. Nomes de arquivos conferidos no repositório
 | RF-01 | — | `services/diagnoses.ts` (`createDiagnosis`), `diagnosticos/page.tsx` | integração: "cria o diagnóstico já com a versão 1"; E2E: fluxo do consultor |
 | RF-02 | — | `discovery-script.ts`, `diagnosticos/[id]/page.tsx` | E2E (roteiro aparece nos prints); sem teste unitário do texto |
 | RF-03, RF-04 | RN-08 | `validation.ts`, `processos/[pid]/page.tsx`, `engine.ts` | unit: "dado faltante"; integração: "campos vazios como null"; E2E: "falta: taxa de erro" e valor fora da faixa |
-| RF-05, RF-06 | RN-01 a RN-05, RN-09 | `scoring/engine.ts` | `scoring.test.ts` (55 testes) |
+| RF-05, RF-06 | RN-01 a RN-05, RN-09 | `scoring/engine.ts` | `scoring.test.ts` (55 testes, na sprint 1) |
 | RF-07 | RN-04 | `scoring/engine.ts` (`quadrantOf`), `MatrixChart.tsx` | unit: quadrantes; E2E: matriz visível |
 | RF-08 | RN-06 | `scoring/engine.ts`, `scoring/summary.ts` | unit: retorno e payback; conta manual em [exemplos](../03-metodologia/exemplos-de-calculo.md) |
 | RF-09 | RN-06, RN-09 | `premissas/page.tsx`, `actions.ts`, `premisesSchema` | integração: premissas mudam a economia; E2E: dobrar custo da hora e recusar redução inválida |

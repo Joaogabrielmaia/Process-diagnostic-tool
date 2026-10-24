@@ -5,7 +5,7 @@ Voltar ao [README](../README.md). Todos os links são relativos.
 ## 00 · Sobre este caso
 - [Sobre este caso: quem sou, o que é simulado e o que é real](00-sobre-este-caso/README.md)
 
-## 01 · Descoberta
+## 01 · Discovery
 - [Brainstorm de 5 ideias e matriz de decisão](01-discovery/01-brainstorm-e-decisao.md)
 - [O negócio Atalho Automação](01-discovery/02-negocio-atalho.md)
 - [Reunião 1 · sócio-consultor (simulada)](01-discovery/03-reuniao-socio.md)

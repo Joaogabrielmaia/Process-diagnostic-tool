@@ -71,3 +71,5 @@ A v1 tem 12 processos com completude média de 87%; a v2 tem 14 processos com 10
 1. A **ordem das oportunidades** é robusta ao custo da hora e aos cortes testados; é sensível a **dado faltante**.
 2. **Valores em reais e payback** dependem linearmente das premissas de custo e redução: tratar sempre como faixa.
 3. Não testei variação **dos pesos** do potencial e do esforço (só do corte de potencial). É uma lacuna; está no [roadmap](../06-pos-lancamento/roadmap.md).
+
+Saída bruta do script: [.sensitivity-output.md](.sensitivity-output.md)

@@ -2,7 +2,7 @@
 
 O roteiro tem **três perguntas por área**, escolhidas porque cada uma revela algo que alimenta um critério da pontuação. O texto exato está em [`src/lib/discovery-script.ts`](../../src/lib/discovery-script.ts) e aparece na tela de roteiro.
 
-Depois das perguntas da área, o consultor registra **cada processo** citado com nove campos. Por que cada campo existe:
+Depois das perguntas da área, o consultor registra **cada processo** citado com dez campos de levantamento (a frequência e nove opcionais). Por que cada campo existe:
 
 | Campo | Pergunta ao cliente | Por que pergunto | Alimenta |
 |---|---|---|---|
