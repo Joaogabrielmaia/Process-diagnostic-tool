@@ -1,6 +1,6 @@
 # Exemplo de relatório
 
-Dois PDFs gerados pelo próprio app (`npm run report:pdf`) a partir do seed da Clínica Vida Plena. Todos os números são estimativas calculadas sobre dados fictícios.
+Dois PDFs gerados pelo próprio app a partir do seed da Clínica Vida Plena. Todos os números são estimativas calculadas sobre dados fictícios.
 
 | Arquivo | O que mostra |
 |---|---|
