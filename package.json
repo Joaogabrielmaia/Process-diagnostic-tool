@@ -11,6 +11,7 @@
     "lint": "eslint . --max-warnings 0",
     "typecheck": "tsc --noEmit",
     "test": "vitest run --project unit",
+    "test:coverage": "vitest run --project unit --coverage",
     "test:integration": "vitest run --project integration --no-file-parallelism",
     "test:e2e": "playwright test",
     "test:all": "vitest run && playwright test",

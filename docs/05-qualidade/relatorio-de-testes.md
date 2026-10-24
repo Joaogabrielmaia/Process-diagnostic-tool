@@ -41,7 +41,7 @@ Depois da execução rodei `npm run demo:clean` e restaurei os prints sobrescrit
 
 ## Cobertura (medida, v1.0.0)
 
-`npx vitest run --project unit --coverage`, restrita a `src/lib/scoring/**`:
+`npm run test:coverage` (`vitest run --project unit --coverage`), restrita a `src/lib/scoring/**`:
 
 | Arquivo | Linhas | Ramos | Funções |
 |---|---|---|---|

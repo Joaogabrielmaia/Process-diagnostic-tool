@@ -127,6 +127,7 @@ Entre com `marcos@atalho.example` e a senha de `SEED_CONSULTANT_PASSWORD` no `.e
 ```bash
 npm run typecheck && npm run lint
 npm test                    # unitários
+npm run test:coverage       # cobertura de src/lib/scoring
 npm run test:integration    # usa o banco mapa_test
 npm run test:e2e            # com o app rodando
 npm run screenshots         # regenera os prints (rode antes: npm run demo:clean)
